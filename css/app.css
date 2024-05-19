@@ -156,6 +156,21 @@ main aside .social-media li a {
   text-decoration: none;
   font-size: 1.5rem;
   color: white;
-  
+
   transition: all 0.1s ease-in-out;
+}
+
+/* Medium devices (768px dan di bawahnya) */
+@media screen and (max-width: 768px) {
+  header.navbar-container {
+    flex-direction: column;
+  }
+  header.navbar-container .nav-list ul {
+    flex-wrap: wrap;
+    column-gap: 0.5rem;
+  }
+  main .content {
+    flex-direction: column;
+    gap: 2rem;
+  }
 }
